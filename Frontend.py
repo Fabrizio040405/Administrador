@@ -1,10 +1,8 @@
 import flet as ft
 import os
-
+# Imágenes
 base = os.path.dirname(__file__)
 temp = os.path.join(base,'templates')
-# Imágenes
-
 # /Imágenes
 
 def main(page : ft.Page):
@@ -46,10 +44,10 @@ def main(page : ft.Page):
     
     contenedor_login = ft.Container(
                             content=col1_Login,
-                            bgcolor=ft.Colors.BLACK,
+                            bgcolor=ft.Colors.BLACK_87,
                             expand=True,
                             padding=20,  # Un margen interior para que los TextField no toquen los bordes
-                            opacity=0.7
+                            opacity=0.80
                             )
 
     # ------------------------------ /Login ---------------------------------
@@ -61,7 +59,7 @@ def main(page : ft.Page):
     Contenedor_principal = ft.Container(content=contenedor_login,
                            bgcolor=ft.Colors.BLACK,
                            expand=True,
-                           image = ft.DecorationImage(src='login_imagen_2.png',opacity=0.7,fit=ft.BoxFit.COVER),
+                           image = ft.DecorationImage(src='login_imagen_2.png',opacity=0.8,fit=ft.BoxFit.COVER),
                            width=1290,
                            height=800
                            )
